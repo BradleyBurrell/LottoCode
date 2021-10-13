@@ -3,6 +3,10 @@ import datetime
 
 
 def lotto_number_picker():
+    """
+    This function will pick five main numbers and two lucky stars for EuroMillion.
+    :return:
+    """
     will_win = False
     main_numbers = []
     star_numbers = []
@@ -29,6 +33,37 @@ def lotto_number_picker():
     print("Lucky Star Numbers:")
     for star_number_p in sorted(star_numbers):
         print('\t{}'.format(star_number_p))
+    print("""
+If you win more than a tenner using this you owe me a pint or...
 
 
-lotto_number_picker()
+                                                    -- __
+                                                  ~ (@)  ~~~---_
+                                                {     `-_~,,,,,,)
+                                                {    (_  ',
+                                                 ~    . = _',
+                                                  ~    '.  =-'
+                                                    ~     :
+ .                                                -~     ('');
+ '.                                         --~        \  \ ;
+   '.-_                                   -~            \  \;      _-=,.
+      -~- _                          -~                 {  '---- _'-=,.
+        ~- _~-  _              _ -~                     ~---------=,.`
+             ~-  ~~-----~~~~~~       .+++~~~~~~~~-__   /
+                 ~-   __            {   -     +   }   /
+                          ~- ______{_    _ -=\ / /_ ~
+                              :      ~--~    // /         ..-
+                              :   / /      // /         ((
+                              :  / /      {   `-------,. ))
+                              :   /        ''=--------. }o
+                 .=._________,'  )                     ))
+                 )  _________ -''                     ~~
+                / /  _ _
+               (_.-.'O'-'.
+
+                                    Raptors!!!
+    """)
+
+
+if __name__ == '__main__':
+    lotto_number_picker()
